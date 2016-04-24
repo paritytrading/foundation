@@ -22,7 +22,7 @@ Add a Maven dependency to Foundation:
 Links
 -----
 
-For more information about Foundation:
+For more information on Foundation:
 
   - Follow [@paritytrading](https://twitter.com/paritytrading) on Twitter for
     news and annoucements
