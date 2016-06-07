@@ -24,6 +24,8 @@ Links
 
 For more information on Foundation:
 
+  - See [Parity Guide](https://github.com/paritytrading/documentation) for
+    the user and developer documentation
   - Follow [@paritytrading](https://twitter.com/paritytrading) on Twitter for
     news and annoucements
   - Join [paritytrading/chat](https://gitter.im/paritytrading/chat) on Gitter
