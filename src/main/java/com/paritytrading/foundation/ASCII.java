@@ -1,33 +1,12 @@
 package com.paritytrading.foundation;
 
+import static com.paritytrading.foundation.Longs.POWERS_OF_TEN;
 import static java.nio.charset.StandardCharsets.US_ASCII;
 
 /**
  * This class contains methods for manipulating ASCII strings.
  */
 public class ASCII {
-
-    private static final long[] POWERS_OF_TEN = new long[] {
-        1L,
-        10L,
-        100L,
-        1000L,
-        10000L,
-        100000L,
-        1000000L,
-        10000000L,
-        100000000L,
-        1000000000L,
-        10000000000L,
-        100000000000L,
-        1000000000000L,
-        10000000000000L,
-        100000000000000L,
-        1000000000000000L,
-        10000000000000000L,
-        100000000000000000L,
-        1000000000000000000L,
-    };
 
     private ASCII() {
     }
