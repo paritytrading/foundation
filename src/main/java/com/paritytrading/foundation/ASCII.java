@@ -310,7 +310,6 @@ public class ASCII {
             bytes[i] = ' ';
     }
 
-
     /**
      * Pack an ASCII string into a short.
      *
