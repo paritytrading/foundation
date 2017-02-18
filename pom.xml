@@ -11,7 +11,7 @@
 
   <groupId>com.paritytrading.foundation</groupId>
   <artifactId>foundation</artifactId>
-  <version>0.2.1</version>
+  <version>0.2.2-SNAPSHOT</version>
 
   <name>Foundation</name>
   <description>Building blocks for network protocols on the JVM.</description>
@@ -35,7 +35,7 @@
     <connection>scm:git:git@github.com:paritytrading/foundation.git</connection>
     <developerConnection>scm:git:git@github.com:paritytrading/foundation.git</developerConnection>
     <url>https://github.com/paritytrading/foundation</url>
-    <tag>0.2.1</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
