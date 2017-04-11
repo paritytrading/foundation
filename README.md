@@ -1,26 +1,23 @@
-Foundation
-==========
+# Foundation
 
 Foundation contains building blocks for implementing network protocols on the
 JVM.
 
 Foundation requires Java Runtime Environment (JRE) 7 or newer.
 
-
-Download
---------
+## Download
 
 Add a Maven dependency to Foundation:
 
-    <dependency>
-      <groupId>com.paritytrading.foundation</groupId>
-      <artifactId>foundation</artifactId>
-      <version><!-- latest version --></version>
-    </dependency>
+```xml
+<dependency>
+  <groupId>com.paritytrading.foundation</groupId>
+  <artifactId>foundation</artifactId>
+  <version><!-- latest version --></version>
+</dependency>
+```
 
-
-Links
------
+## Links
 
 For more information on Foundation:
 
@@ -31,9 +28,7 @@ For more information on Foundation:
 - Join [paritytrading/chat](https://gitter.im/paritytrading/chat) on Gitter
   for discussions
 
-
-License
--------
+## License
 
 Copyright 2016 Jussi Virtanen.
 
