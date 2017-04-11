@@ -13,9 +13,13 @@ Add a Maven dependency to Foundation:
 <dependency>
   <groupId>com.paritytrading.foundation</groupId>
   <artifactId>foundation</artifactId>
-  <version><!-- latest version --></version>
+  <version><!-- latest release --></version>
 </dependency>
 ```
+
+See the [latest release][] on GitHub.
+
+  [latest release]: https://github.com/paritytrading/foundation/releases/latest
 
 ## Links
 
