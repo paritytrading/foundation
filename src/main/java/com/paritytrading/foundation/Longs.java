@@ -2,7 +2,7 @@ package com.paritytrading.foundation;
 
 /**
  * This class contains methods for working with the primitive type
- * <code>long</code>.
+ * {@code long}.
  */
 public class Longs {
 
