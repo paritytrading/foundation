@@ -2,14 +2,9 @@ package com.paritytrading.foundation;
 
 import static org.junit.Assert.*;
 
-import org.junit.Rule;
 import org.junit.Test;
-import org.junit.rules.ExpectedException;
 
 public class ASCIITest {
-
-    @Rule
-    public ExpectedException exception = ExpectedException.none();
 
     @Test
     public void get() {
@@ -43,10 +38,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { 'f', 'o', 'o', ' ', ' ' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongLeft() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[2];
 
         ASCII.putLeft(bytes, "foo");
@@ -61,10 +54,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { ' ', ' ', 'f', 'o', 'o' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongRight() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[2];
 
         ASCII.putRight(bytes, "foo");
@@ -116,10 +107,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { '-', '1', '2', '3', ' ' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongLongLeft() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[5];
 
         ASCII.putLongLeft(bytes, 123456);
@@ -143,10 +132,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { ' ', '-', '1', '2', '3' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongLongRight() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[5];
 
         ASCII.putLongRight(bytes, 123456);
@@ -272,10 +259,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { '-', '0', '.', '0', '1' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongFixedLeft() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[5];
 
         ASCII.putFixedLeft(bytes, 123456, 2);
@@ -317,10 +302,8 @@ public class ASCIITest {
         assertArrayEquals(new byte[] { '-', '0', '.', '0', '1' }, bytes);
     }
 
-    @Test
+    @Test(expected=IndexOutOfBoundsException.class)
     public void putTooLongFixedRight() {
-        exception.expect(IndexOutOfBoundsException.class);
-
         byte[] bytes = new byte[5];
 
         ASCII.putFixedRight(bytes, 123456, 2);
