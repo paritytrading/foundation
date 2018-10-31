@@ -3,7 +3,7 @@
 Foundation contains building blocks for implementing network protocols on the
 JVM.
 
-Foundation requires Java Runtime Environment (JRE) 7 or newer.
+Foundation requires Java Runtime Environment (JRE) 8 or newer.
 
 ## Download
 
