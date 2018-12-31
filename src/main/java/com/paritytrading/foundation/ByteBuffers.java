@@ -157,7 +157,7 @@ public class ByteBuffers {
      *   remaining in the buffer
      */
     public static int getUnsignedShort(ByteBuffer buffer) {
-        return (int)(buffer.getShort() & 0xffff);
+        return buffer.getShort() & 0xffff;
     }
 
     /**
@@ -171,7 +171,7 @@ public class ByteBuffers {
      *   smaller than the buffer's limit, minus one
      */
     public static int getUnsignedShort(ByteBuffer buffer, int index) {
-        return (int)(buffer.getShort(index) & 0xffff);
+        return buffer.getShort(index) & 0xffff;
     }
 
     /**
@@ -211,7 +211,7 @@ public class ByteBuffers {
      *   remaining in the buffer
      */
     public static long getUnsignedInt(ByteBuffer buffer) {
-        return (long)(buffer.getInt() & 0xffffffffL);
+        return buffer.getInt() & 0xffffffffL;
     }
 
     /**
@@ -225,7 +225,7 @@ public class ByteBuffers {
      *   smaller than the buffer's limit, minus three
      */
     public static long getUnsignedInt(ByteBuffer buffer, int index) {
-        return (long)(buffer.getInt(index) & 0xffffffffL);
+        return buffer.getInt(index) & 0xffffffffL;
     }
 
     /**
