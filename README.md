@@ -32,6 +32,8 @@ For more information on Foundation:
 
 ## License
 
-Copyright 2016 Jussi Virtanen.
+Copyright 2016 Jussi Virtanen and [contributors][].
+
+  [contributors]: https://github.com/paritytrading/foundation/graphs/contributors
 
 Released under the Apache License, Version 2.0. See `LICENSE.txt` for details.
