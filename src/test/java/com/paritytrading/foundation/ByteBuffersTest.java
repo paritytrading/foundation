@@ -15,15 +15,15 @@
  */
 package com.paritytrading.foundation;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 import java.nio.ByteBuffer;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
-public class ByteBuffersTest {
+class ByteBuffersTest {
 
     @Test
-    public void gettingAbsoluteBulk() {
+    void gettingAbsoluteBulk() {
         ByteBuffer src = ByteBuffer.wrap(new byte[] { 0x01, 0x02, 0x03, 0x04 });
         byte[]     dst = new byte[2];
 
@@ -33,7 +33,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingAbsoluteBulkWithOffsetAndLength() {
+    void gettingAbsoluteBulkWithOffsetAndLength() {
         ByteBuffer src = ByteBuffer.wrap(new byte[] { 0x01, 0x02, 0x03, 0x04 });
         byte[]     dst = new byte[4];
 
@@ -43,7 +43,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingAbsoluteBulk() {
+    void puttingAbsoluteBulk() {
         byte[]     src = new byte[] { 0x01, 0x02 };
         ByteBuffer dst = ByteBuffer.wrap(new byte[4]);
 
@@ -53,7 +53,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingAbsoluteBulkWithOffsetAndLength() {
+    void puttingAbsoluteBulkWithOffsetAndLength() {
         byte[]     src = new byte[] { 0x01, 0x02, 0x03, 0x04 };
         ByteBuffer dst = ByteBuffer.wrap(new byte[4]);
 
@@ -63,7 +63,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingRelativeUnsignedByte() {
+    void gettingRelativeUnsignedByte() {
         ByteBuffer buffer = ByteBuffer.allocate(1);
 
         buffer.put((byte)0xff);
@@ -73,7 +73,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingAbsoluteUnsignedByte() {
+    void gettingAbsoluteUnsignedByte() {
         ByteBuffer buffer = ByteBuffer.allocate(1);
 
         buffer.put((byte)0xff);
@@ -83,7 +83,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingRelativeUnsignedByte() {
+    void puttingRelativeUnsignedByte() {
         ByteBuffer buffer = ByteBuffer.allocate(1);
 
         ByteBuffers.putUnsigned(buffer, (short)255);
@@ -93,7 +93,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingAbsoluteUnsignedByte() {
+    void puttingAbsoluteUnsignedByte() {
         ByteBuffer buffer = ByteBuffer.allocate(1);
 
         ByteBuffers.putUnsigned(buffer, 0, (short)255);
@@ -102,7 +102,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingRelativeUnsignedShort() {
+    void gettingRelativeUnsignedShort() {
         ByteBuffer buffer = ByteBuffer.allocate(2);
 
         buffer.putShort((short)0xffff);
@@ -112,7 +112,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingAbsoluteUnsignedShort() {
+    void gettingAbsoluteUnsignedShort() {
         ByteBuffer buffer = ByteBuffer.allocate(2);
 
         buffer.putShort((short)0xffff);
@@ -122,7 +122,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingRelativeUnsignedShort() {
+    void puttingRelativeUnsignedShort() {
         ByteBuffer buffer = ByteBuffer.allocate(2);
 
         ByteBuffers.putUnsignedShort(buffer, 65535);
@@ -132,7 +132,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingAbsoluteUnsignedShort() {
+    void puttingAbsoluteUnsignedShort() {
         ByteBuffer buffer = ByteBuffer.allocate(2);
 
         ByteBuffers.putUnsignedShort(buffer, 0, 65535);
@@ -141,7 +141,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingRelativeUnsignedInteger() {
+    void gettingRelativeUnsignedInteger() {
         ByteBuffer buffer = ByteBuffer.allocate(4);
 
         buffer.putInt(0xffffffff);
@@ -151,7 +151,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void gettingAbsoluteUnsignedInteger() {
+    void gettingAbsoluteUnsignedInteger() {
         ByteBuffer buffer = ByteBuffer.allocate(4);
 
         buffer.putInt(0xffffffff);
@@ -161,7 +161,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingRelativeUnsignedInteger() {
+    void puttingRelativeUnsignedInteger() {
         ByteBuffer buffer = ByteBuffer.allocate(4);
 
         ByteBuffers.putUnsignedInt(buffer, 4294967295L);
@@ -171,7 +171,7 @@ public class ByteBuffersTest {
     }
 
     @Test
-    public void puttingAbsoluteUnsignedInteger() {
+    void puttingAbsoluteUnsignedInteger() {
         ByteBuffer buffer = ByteBuffer.allocate(4);
 
         ByteBuffers.putUnsignedInt(buffer, 0, 4294967295L);
