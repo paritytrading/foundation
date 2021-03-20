@@ -1,5 +1,13 @@
 # Release Notes
 
+## 0.3.0 (2021-03-20)
+
+- Fix `ByteArrays#pack` (Jussi Virtanen)
+
+  Treat each byte as unsigned when packing a byte array into an integer.
+
+- Remove redundant casts (Jonathan Heusser)
+
 ## 0.2.1 (2017-02-18)
 
 - Fix JUnit dependency scope
