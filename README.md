@@ -1,6 +1,6 @@
 # Foundation
 
-Foundation is an utility library for network protocols on the JVM.
+Foundation is a utility library for network protocols on the JVM.
 
 Foundation requires Java Runtime Environment (JRE) 8 or newer.
 

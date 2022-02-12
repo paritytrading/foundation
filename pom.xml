@@ -28,7 +28,7 @@
   <version>0.3.1-SNAPSHOT</version>
 
   <name>Foundation</name>
-  <description>Building blocks for network protocols on the JVM.</description>
+  <description>A utility library for network protocols.</description>
   <url>https://github.com/paritytrading/foundation</url>
 
   <licenses>
