@@ -104,6 +104,7 @@
         <version>3.3.1</version>
         <configuration>
           <failOnWarnings>true</failOnWarnings>
+          <source>${java.version}</source>
         </configuration>
       </plugin>
       <plugin>
