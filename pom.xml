@@ -25,7 +25,7 @@
 
   <groupId>com.paritytrading.foundation</groupId>
   <artifactId>foundation</artifactId>
-  <version>1.0.0</version>
+  <version>1.0.1-SNAPSHOT</version>
 
   <name>Foundation</name>
   <description>A utility library for network protocols.</description>
@@ -49,7 +49,7 @@
     <connection>scm:git:git@github.com:paritytrading/foundation.git</connection>
     <developerConnection>scm:git:git@github.com:paritytrading/foundation.git</developerConnection>
     <url>https://github.com/paritytrading/foundation</url>
-    <tag>1.0.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <properties>
