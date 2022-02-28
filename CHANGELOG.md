@@ -1,5 +1,9 @@
 # Release Notes
 
+## 1.0.0 (2022-02-28)
+
+- No changes
+
 ## 0.3.0 (2021-03-20)
 
 - Fix `ByteArrays#pack` (Jussi Virtanen)
