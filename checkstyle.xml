@@ -43,7 +43,7 @@
       <!-- An empty line between static imports and type imports. -->
       <property name="separatedStaticGroups" value="true" />
 
-      <!-- Staic imports in alphabetical order. -->
+      <!-- Static imports in alphabetical order. -->
       <property name="sortStaticImportsAlphabetically" value="true" />
     </module>
 
