@@ -20,6 +20,13 @@ See the [latest release][] on GitHub.
 
   [latest release]: https://github.com/paritytrading/foundation/releases/latest
 
+## Links
+
+For more information on Foundation:
+
+- Follow [paritytrading@fosstodon.org](https://fosstodon.org/@paritytrading)
+  on Mastodon for news and announcements
+
 ## License
 
 Copyright 2016 Foundation authors.
